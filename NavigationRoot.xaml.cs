@@ -31,16 +31,20 @@ namespace hamburgerExample
         {
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
         }
-        public Frame AppFrame { get { return Content; } }
+
         private void MenuButton1_Click(object sender, RoutedEventArgs e)
         {
-            AppFrame.Navigate(typeof(page2));
-            //  this.Frame.Navigate(typeof(page2));
+            Content.Navigate(typeof(SummaryPage));
         }
 
         private void MenuButton2_Click(object sender, RoutedEventArgs e)
         {
-            AppFrame.Navigate(typeof(page3));
+            Content.Navigate(typeof(page2));
+        }
+
+        private void MenuButton3_Click(object sender, RoutedEventArgs e)
+        {
+            Content.Navigate(typeof(page3));
         }
     }
 }
