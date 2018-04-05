@@ -5,9 +5,35 @@
     xmlns:local="using:hamburgerExample"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:hamburgerExample.model"
     mc:Ignorable="d">
+    <Page.Resources>
+        <DataTemplate x:DataType="data:Book" x:Key="BookDataTemplate">
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock FontSize="10" Text="{x:Bind Title}" HorizontalAlignment="Center"/>
+                <TextBlock FontSize="11" Text="{x:Bind Author}" HorizontalAlignment="Center" />
+            </StackPanel>
 
+        </DataTemplate>
+    </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox PlaceholderText="this is second page" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+
+            <RowDefinition Height="100" />
+
+            </Grid.RowDefinitions>
+        <GridView ItemsSource="{x:Bind Books}" IsItemClickEnabled="True" ItemClick="GridView_ItemClick"
+                  ItemTemplate="{StaticResource BookDataTemplate}">
+
+            
+        </GridView>
+
+        <TextBlock Grid.Row="1" Name="ResultTextBox" Foreground="Red" FontSize="24" FontWeight="Bold" />
+
     </Grid>
+  
+
+
+
 </Page>
