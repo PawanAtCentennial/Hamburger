@@ -10,12 +10,15 @@
     <Page.Resources>
         <DataTemplate x:DataType="data:Book" x:Key="BookDataTemplate">
             <StackPanel HorizontalAlignment="Center">
-                <TextBlock FontSize="10" Text="{x:Bind Title}" HorizontalAlignment="Center"/>
-                <TextBlock FontSize="11" Text="{x:Bind Author}" HorizontalAlignment="Center" />
+                <TextBlock FontSize="15" Text="{x:Bind Equities}" HorizontalAlignment="Center"/>
+                <TextBlock FontSize="15" Text="{x:Bind Amount}" HorizontalAlignment="Center" />
+                <TextBlock FontSize="15" Text="{x:Bind Value}" HorizontalAlignment="Center" />
+                <TextBlock FontSize="15" Text="{x:Bind Total}" HorizontalAlignment="Center" />
             </StackPanel>
 
         </DataTemplate>
     </Page.Resources>
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />

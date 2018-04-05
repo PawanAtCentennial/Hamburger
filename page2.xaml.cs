@@ -34,7 +34,7 @@ namespace hamburgerExample
         {
             var book=(Book)e.ClickedItem;
             
-            ResultTextBox.Text = "You Selected " + book.Title;
+            ResultTextBox.Text = "You Selected " + book.Equities;
         }
     }
 }

@@ -8,10 +8,15 @@ namespace hamburgerExample.model
 {
     public class Book
     {
-        public int BookId { get; set; }
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public string CoverImage { get; set; }
+
+        public string Equities { get; set; }
+
+        public double Amount { get; set; }
+
+        public double Value { get; set; }
+
+        public double Total { get; set; }
+     
     }
 
     public class BookManager
@@ -19,13 +24,10 @@ namespace hamburgerExample.model
         public static List<Book> GetBooks()
         {
             var books = new List<Book>();
-            books.Add(new Book { BookId = 1, Title = "title1" , Author = "Author1", CoverImage = "CoverImage1"});
-            books.Add(new Book { BookId = 2, Title = "title2", Author = "Author2", CoverImage = "CoverImage2" });
-            books.Add(new Book { BookId = 3, Title = "title3", Author = "Author3", CoverImage = "CoverImage3" });
-            books.Add(new Book { BookId = 4, Title = "title4", Author = "Author4", CoverImage = "CoverImage4" });
-            books.Add(new Book { BookId = 5, Title = "title5", Author = "Author5", CoverImage = "CoverImage5" });
-            books.Add(new Book { BookId = 6, Title = "title6", Author = "Author6", CoverImage = "CoverImage6" });
-
+            books.Add(new Book { Equities = "FOO", Amount = 10, Value = 23.32, Total = 2332 } );
+            books.Add(new Book { Equities = "BAR", Amount = 10, Value = 493.01, Total = 49301 });
+            books.Add(new Book { Equities = "BAZ", Amount = 10, Value = 204.12, Total = 20412 });
+           
             return books;
 
         }
