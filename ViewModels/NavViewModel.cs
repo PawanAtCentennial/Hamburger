@@ -25,7 +25,7 @@ namespace hamburgerExample.ViewModels
             {
                 MainMenuItems.Add(new MenuItem()
                 {
-                    Icon = Symbol.Account,
+                    Icon = Symbol.Contact,
                     Name = "My Account",
                     PageType = typeof(Views.AccountsView)
                 });

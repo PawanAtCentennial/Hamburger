@@ -8,6 +8,8 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <ListView x:Name="Transactions" Background="AliceBlue" HorizontalAlignment="Left" Height="100" Margin="575,155,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Buy" HorizontalAlignment="Left" Margin="335,155,0,0" VerticalAlignment="Top"/>
+        <Button Content="Sell" HorizontalAlignment="Left" Margin="335,287,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Page>

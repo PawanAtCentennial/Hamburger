@@ -31,5 +31,10 @@ namespace hamburgerExample.Views
         {
             Frame.Navigate(typeof(NavigationRoot));
         }
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(RegisterView));
+        }
     }
 }

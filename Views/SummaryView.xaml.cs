@@ -25,6 +25,13 @@ namespace hamburgerExample.Views
         public SummaryView()
         {
             this.InitializeComponent();
+            ShowTransactions();
+
+        }
+
+        private void ShowTransactions()
+        {
+            Transactions.Items.Add("Currently you have 0 transactions");
         }
     }
 }

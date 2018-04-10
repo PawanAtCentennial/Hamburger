@@ -49,7 +49,8 @@
                         Background="#fff"
                         Foreground="#000"
                         BorderBrush="#000"
-                        HorizontalAlignment="Stretch" />
+                        HorizontalAlignment="Stretch"
+                        Click="btnRegister_Click"/>
             </Grid>
         </Grid>
     </Grid>

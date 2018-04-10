@@ -1,4 +1,5 @@
-﻿using System;
+﻿using hamburgerExample.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,20 @@ namespace hamburgerExample.Views
     /// </summary>
     public sealed partial class ExchangeView : Page
     {
+        private List<Book> Books;
+
         public ExchangeView()
         {
             this.InitializeComponent();
+            Books = BookManager.GetBooks();
+        }
+
+        private void GridView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var book = (Book)e.ClickedItem;
+
+            ResultTextBox.Text = "You Selected " + book.Equities;
         }
     }
+    
 }
