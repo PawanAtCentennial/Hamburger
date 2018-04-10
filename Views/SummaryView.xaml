@@ -1,8 +1,8 @@
 ﻿<Page
-    x:Class="hamburgerExample.SummaryPage"
+    x:Class="hamburgerExample.Views.SummaryView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:hamburgerExample"
+    xmlns:local="using:hamburgerExample.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -11,6 +11,5 @@
         <ListView x:Name="Transactions" Background="AliceBlue" HorizontalAlignment="Left" Height="100" Margin="575,155,0,0" VerticalAlignment="Top" Width="100"/>
         <Button Content="Buy" HorizontalAlignment="Left" Margin="335,155,0,0" VerticalAlignment="Top"/>
         <Button Content="Sell" HorizontalAlignment="Left" Margin="335,287,0,0" VerticalAlignment="Top"/>
-
     </Grid>
 </Page>
