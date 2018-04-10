@@ -20,31 +20,20 @@ namespace hamburgerExample
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class NavigationRoot : Page
     {
-        public MainPage()
+        public NavigationRoot()
         {
             this.InitializeComponent();
-        }
-
-        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
-        {
-            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
-        }
-
-        private void MenuButton1_Click(object sender, RoutedEventArgs e)
-        {
             Content.Navigate(typeof(SummaryPage));
         }
 
-        private void MenuButton2_Click(object sender, RoutedEventArgs e)
-        {
-            Content.Navigate(typeof(page2));
-        }
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e) => MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
 
-        private void MenuButton3_Click(object sender, RoutedEventArgs e)
-        {
-            Content.Navigate(typeof(page3));
-        }
+        private void MenuButton1_Click(object sender, RoutedEventArgs e) => Content.Navigate(typeof(SummaryPage));
+
+        private void MenuButton2_Click(object sender, RoutedEventArgs e) => Content.Navigate(typeof(page2));
+
+        private void MenuButton3_Click(object sender, RoutedEventArgs e) => Content.Navigate(typeof(page3));
     }
 }

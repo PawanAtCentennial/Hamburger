@@ -95,14 +95,16 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Data\MockSecurities.cs" />
+    <Compile Include="Data\Repository.cs" />
     <Compile Include="NavigationRoot.xaml.cs">
       <DependentUpon>NavigationRoot.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page2.xaml.cs">
-      <DependentUpon>page2.xaml</DependentUpon>
+    <Compile Include="ExchangePage.xaml.cs">
+      <DependentUpon>ExchangePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page3.xaml.cs">
-      <DependentUpon>page3.xaml</DependentUpon>
+    <Compile Include="AccountsPage.xaml.cs">
+      <DependentUpon>AccountsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SummaryPage.xaml.cs">
@@ -135,11 +137,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="page2.xaml">
+    <Page Include="ExchangePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page3.xaml">
+    <Page Include="AccountsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
