@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace hamburgerExample.model
+namespace hamburgerExample.Models
 {
     public class Book
     {
