@@ -29,13 +29,13 @@
         <GridView ItemsSource="{x:Bind Books}" IsItemClickEnabled="True" ItemClick="GridView_ItemClick"
                   ItemTemplate="{StaticResource BookDataTemplate}">
 
-            
+
         </GridView>
 
         <TextBlock Grid.Row="1" Name="ResultTextBox" Foreground="Red" FontSize="24" FontWeight="Bold" />
 
     </Grid>
-  
+
 
 
 
